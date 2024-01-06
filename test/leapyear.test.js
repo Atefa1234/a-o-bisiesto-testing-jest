@@ -22,4 +22,10 @@ describe("tests that validate if a year is leap year or no", ()=>{
         const recieved_answer = leap_year.leapyear(year_entered);
         expect(recieved_answer).toBe(expected_answer);
     })
+    test('A year is not a leap year if it is divisible by 100 but not by 400',()=>{
+        const year_entered = 1800;
+        const expected_answer = false;
+        const recieved_answer = leap_year.leapyear(year_entered);
+        expect(recieved_answer).toBe(expected_answer);
+    })
 })
