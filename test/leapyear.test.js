@@ -16,4 +16,10 @@ describe("tests that validate if a year is leap year or no", ()=>{
         const recieved_answer = leap_year.leapyear(year_entered);
         expect(recieved_answer).toBe(expected_answer);
     })
+    test('A year is a leap year if it is divisible by 400',()=>{
+        const year_entered = 1600;
+        const expected_answer = true;
+        const recieved_answer = leap_year.leapyear(year_entered);
+        expect(recieved_answer).toBe(expected_answer);
+    })
 })
